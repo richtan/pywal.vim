@@ -1,5 +1,5 @@
-" wal Airline
-let g:airline#themes#wal#palette = {}
+" pywal Airline
+let g:airline#themes#pywal#palette = {}
 
 " Normal mode
 let s:N  = [ '', '', 232, 4, 'BOLD' ]
@@ -17,34 +17,34 @@ let s:V2 = [ '', '', 1, 0, 'BOLD' ]
 let s:R  = [ '', '', 232, 5, 'BOLD' ]
 let s:R2 = [ '', '', 5, 0, 'BOLD' ]
 
-let g:airline#themes#wal#palette.normal  = airline#themes#generate_color_map(s:N, s:N2, s:N2)
-let g:airline#themes#wal#palette.insert  = airline#themes#generate_color_map(s:I, s:I2, s:I2)
-let g:airline#themes#wal#palette.visual  = airline#themes#generate_color_map(s:V, s:V2, s:V2)
-let g:airline#themes#wal#palette.replace = airline#themes#generate_color_map(s:R, s:R2, s:R2)
+let g:airline#themes#pywal#palette.normal  = airline#themes#generate_color_map(s:N, s:N2, s:N2)
+let g:airline#themes#pywal#palette.insert  = airline#themes#generate_color_map(s:I, s:I2, s:I2)
+let g:airline#themes#pywal#palette.visual  = airline#themes#generate_color_map(s:V, s:V2, s:V2)
+let g:airline#themes#pywal#palette.replace = airline#themes#generate_color_map(s:R, s:R2, s:R2)
 
-let g:airline#themes#wal#palette.accents = { 'red': [ '', '', 0, 2, 'BOLD' ] }
+let g:airline#themes#pywal#palette.accents = { 'red': [ '', '', 0, 2, 'BOLD' ] }
 
 " Inactive mode
 let s:IN1 = [ '', '', 0, 8 ]
 let s:IN2 = [ '', '', 0, 0 ]
 
 let s:IA = [ s:IN1[1], s:IN2[1], s:IN1[3], s:IN2[3], '' ]
-let g:airline#themes#wal#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
+let g:airline#themes#pywal#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
 
 " Warnings
 let s:WI = [ '', '', 232, 1, 'BOLD' ]
-let g:airline#themes#wal#palette.normal.airline_warning  = s:WI
-let g:airline#themes#wal#palette.insert.airline_warning  = s:WI
-let g:airline#themes#wal#palette.visual.airline_warning  = s:WI
-let g:airline#themes#wal#palette.replace.airline_warning = s:WI
+let g:airline#themes#pywal#palette.normal.airline_warning  = s:WI
+let g:airline#themes#pywal#palette.insert.airline_warning  = s:WI
+let g:airline#themes#pywal#palette.visual.airline_warning  = s:WI
+let g:airline#themes#pywal#palette.replace.airline_warning = s:WI
 
-let g:airline#themes#wal#palette.normal.airline_error  = s:WI
-let g:airline#themes#wal#palette.insert.airline_error  = s:WI
-let g:airline#themes#wal#palette.visual.airline_error  = s:WI
-let g:airline#themes#wal#palette.replace.airline_error = s:WI
+let g:airline#themes#pywal#palette.normal.airline_error  = s:WI
+let g:airline#themes#pywal#palette.insert.airline_error  = s:WI
+let g:airline#themes#pywal#palette.visual.airline_error  = s:WI
+let g:airline#themes#pywal#palette.replace.airline_error = s:WI
 
 " Tabline
-let g:airline#themes#wal#palette.tabline = {
+let g:airline#themes#pywal#palette.tabline = {
       \ 'airline_tab':     [ '', '', 4, 0, 'BOLD' ],
       \ 'airline_tabsel':  [ '', '', 232, 4, 'BOLD' ],
       \ 'airline_tabtype': [ '', '', 232, 4, 'BOLD' ],
@@ -56,7 +56,7 @@ if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif
 
-let g:airline#themes#wal#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
+let g:airline#themes#pywal#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
       \ [ '', '', 0, 0, 'BOLD' ],
       \ [ '', '', 0, 0, 'BOLD' ],
       \ [ '', '', 0, 0, 'BOLD' ] )

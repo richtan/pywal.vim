@@ -1,10 +1,3 @@
-" =============================================================================
-" Filename: autoload/lightline/colorscheme/wal.vim
-" Author: Dylan Araps
-" License: MIT License
-" Last Change: 2017/10/28 12:21:04.
-" =============================================================================
-
 let s:black = [ '', 0 ]
 let s:gray = [ '', 8 ]
 let s:white = [ '', 15 ]
@@ -32,4 +25,4 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:black, s:red ] ]
 let s:p.normal.warning = [ [ s:black, s:yellow ] ]
 
-let g:lightline#colorscheme#wal#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#pywal#palette = lightline#colorscheme#flatten(s:p)
